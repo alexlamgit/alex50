@@ -1,0 +1,218 @@
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background: linear-gradient(270deg, #d23030, #ddc22f, #71c54b, #1156b7, #7411b7, #bf429f, #ff0202, black);
+    background-size: 1400% 1400%;
+
+    -webkit-animation: bg 45s infinite linear;
+    -moz-animation: bg 45s infinite linear;
+    animation: bg 45s infinite linear;
+}
+
+.col-md-6 {
+    background-color: rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+}
+
+#hob_p {
+    color: white;
+    font-weight: 200;
+    font-size: 25px;
+}
+
+#menubar {
+    color: white;
+}
+
+#construction,
+h1 {
+    font-size: 50px;
+    color: white;
+    font-weight: 600;
+}
+
+.btn-light {
+    width: 100%;
+    font-weight: 500;
+}
+
+.btn {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+label {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    font-weight: 500;
+    color: white;
+    font-size: 40px;
+}
+
+.leftside,
+.rightside {
+    height: 100vh;
+    width: 100%;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+/* AFTER A CHANGE THAT I MADE, LEFTSIDE AND RIGHTSIDE ARE NOW SWITCHED, MEANING THAT LEFT REFERS TO RIGHT AND VICE VERSA */
+
+.leftside {
+    /* margin-top: 55px; */
+    background: white;
+    color: black;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+
+.rightside {
+    background: black;
+    font-size: 50px;
+    color: white;
+    font-weight: 600;
+}
+
+.longtext {
+    color: white;
+    font-size: x-large;
+    font-weight: 600;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+}
+
+p {
+    margin-bottom: 40px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    transition: 0.1s;
+    font-weight: 600;
+}
+
+#intext {
+    color: #5e9cff;
+}
+
+#menubar:hover {
+    transform: scale(1.2);
+}
+
+.menulinks:hover,
+.menulinks:active {
+    animation: txtcolorloop 15s infinite linear;
+    font-size: 60px;
+}
+
+.rightside:hover,
+.rightside:active {
+    background: linear-gradient(270deg, black, #d23030, #ddc22f, #71c54b, #1156b7, #7411b7, #bf429f, #ff0202, black, black);
+    background-size: 1400% 1400%;
+
+    -webkit-animation: bg 28s infinite linear;
+    -moz-animation: bg 28s infinite linear;
+    animation: bg 28s infinite linear;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#loading {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: block;
+    opacity: 0.7;
+    background-color: #fff;
+    z-index: 99;
+    text-align: center;
+}
+
+#loading-image {
+    position: absolute;
+    top: 100px;
+    left: 240px;
+    z-index: 100;
+}
+
+@keyframes txtcolorloop {
+    11.1% {
+        color: #bf0000;
+    }
+    22.2% {
+        color: #FFA500;
+    }
+    33.3% {
+        color: #dbdb00;
+    }
+    44.4% {
+        color: #7cd622;
+    }
+    55.5% {
+        color: #06cfcf;
+    }
+    66.6% {
+        color: #0000FF;
+    }
+    77.7% {
+        color: #9932CC;
+    }
+    88.8% {
+        color: #FF1493;
+    }
+    100% {
+        color: black;
+    }
+}
+
+@-webkit-keyframes bg {
+    0% {
+        background-position: 0% 51%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 51%
+    }
+}
+
+@-moz-keyframes bg {
+    0% {
+        background-position: 0% 51%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 51%
+    }
+}
+
+@keyframes bg {
+    0% {
+        background-position: 0% 51%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 51%
+    }
+}
